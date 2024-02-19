@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005571767606",
+    "project_id": "labour-lite",
+    "storage_bucket": "labour-lite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005571767606:android:17fccb38a9f2b12b6bc797",
+        "android_client_info": {
+          "package_name": "com.example.labour_lite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDalUB9519fyPlV1S3ybDjws7KpNHnCKZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
