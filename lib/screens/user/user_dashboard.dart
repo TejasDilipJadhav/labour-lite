@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:labour_lite/screens/user/personal_details_screen.dart';
 import 'package:labour_lite/screens/user/upload_screen.dart';
 
 class UserDashboard extends StatelessWidget {
@@ -22,7 +23,9 @@ class UserDashboard extends StatelessWidget {
               text: "Upload Documents",
               icon: Icons.upload),
           myUpload(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, PersonalDetailsScreen.id);
+              },
               text: "Personal Details",
               icon: Icons.assignment_ind),
           myUpload(

@@ -3,6 +3,7 @@ import 'package:image_picker/image_picker.dart';
 
 class ImageHandling {
   late File _image;
+  late String url;
 
   Future<void> pickImageFromCamera() async {
     final picker = ImagePicker();
@@ -24,5 +25,9 @@ class ImageHandling {
 
   File getImage() {
     return _image;
+  }
+
+  String getUrl() {
+    return url;
   }
 }

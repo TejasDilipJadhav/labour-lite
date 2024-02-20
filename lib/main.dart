@@ -6,6 +6,7 @@ import 'package:labour_lite/screens/admin/admin_dashboard.dart';
 import 'package:labour_lite/screens/login_screen.dart';
 import 'package:labour_lite/screens/registration_screen.dart';
 import 'package:labour_lite/screens/supervisor/supervisor_dashboard.dart';
+import 'package:labour_lite/screens/user/personal_details_screen.dart';
 import 'package:labour_lite/screens/user/upload_screen.dart';
 import 'package:labour_lite/screens/user/user_dashboard.dart';
 import 'package:labour_lite/screens/welcome_screen.dart';
@@ -15,10 +16,12 @@ void main() async {
   Platform.isAndroid
       ? await Firebase.initializeApp(
           options: (const FirebaseOptions(
-              apiKey: 'AIzaSyDalUB9519fyPlV1S3ybDjws7KpNHnCKZA',
-              appId: "1:1005571767606:android:17fccb38a9f2b12b6bc797",
-              messagingSenderId: '1005571767606',
-              projectId: "labour-lite")))
+          apiKey: 'AIzaSyDalUB9519fyPlV1S3ybDjws7KpNHnCKZA',
+          appId: "1:1005571767606:android:17fccb38a9f2b12b6bc797",
+          messagingSenderId: '1005571767606',
+          projectId: "labour-lite",
+          storageBucket: "labour-lite.appspot.com",
+        )))
       : Firebase.initializeApp();
   runApp(const LabourLite());
 }
@@ -37,7 +40,8 @@ class LabourLite extends StatelessWidget {
         UserDashboard.id: (context) => const UserDashboard(),
         SupervisorDashboard.id: (context) => const SupervisorDashboard(),
         AdminDashboard.id: (context) => const AdminDashboard(),
-        UploadScreen.id: (context) => const UploadScreen(),
+        UploadScreen.id: (context) => UploadScreen(),
+        PersonalDetailsScreen.id: (context) => const PersonalDetailsScreen(),
       },
     );
   }
