@@ -17,7 +17,7 @@ class _SupervisorDashboardState extends State<SupervisorDashboard> {
         title: const Text("Supervisor Dashboard"),
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(children: []),
       ),
